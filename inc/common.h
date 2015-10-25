@@ -34,7 +34,7 @@
 # define PATH "./shared_segment"
 # define SEM_PATH "./semaphore_set"
 
-# define SLEEP_TIME (1000000 / 2)
+# define SLEEP_TIME (1000000 / 4)
 # define TEAM_NUMBER 5
 
 enum				e_sem

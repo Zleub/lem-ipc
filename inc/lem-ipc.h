@@ -18,7 +18,7 @@
 #include <sys/ipc.h>
 #include <sys/shm.h>
 
-#define SIZE 64
+#define SIZE 128
 #define ID 42
 #define PATH "./shared_segment"
 
