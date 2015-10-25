@@ -1,0 +1,85 @@
+Norme: /Volumes/Untitled/lem-ipc/inc/common.h
+Norme: /Volumes/Untitled/lem-ipc/inc/get_next_line.h
+Norme: /Volumes/Untitled/lem-ipc/inc/graphic.h
+Norme: /Volumes/Untitled/lem-ipc/inc/lemipc.h
+Norme: /Volumes/Untitled/lem-ipc/inc/libft.h
+Norme: /Volumes/Untitled/lem-ipc/libft/all_free.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_abs.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_atoi.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_bzero.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_isalnum.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_isalpha.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_isascii.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_isdigit.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_isprint.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_isspace.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_itoa.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_memalloc.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_memccpy.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_memchr.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_memcmp.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_memcpy.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_memdel.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_memmove.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_memset.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_print_array.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_putchar.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_putchar_fd.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_putendl.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_putendl_fd.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_putnbr.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_putnbr_fd.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_putstr.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_putstr_fd.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strcat.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strcdup.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strchr.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strclen.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strclr.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strcmp.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strcpy.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strdel.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strdup.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strequ.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_striter.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_striteri.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strjoin.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strlcat.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strlen.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strmap.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strmapi.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strncat.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strncmp.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strncpy.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strndup.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strnequ.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strnew.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strnstr.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strrchr.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strsplit.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strstr.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strsub.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_strtrim.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_tolower.c
+Norme: /Volumes/Untitled/lem-ipc/libft/ft_toupper.c
+Norme: /Volumes/Untitled/lem-ipc/libft/gnl.c
+Norme: /Volumes/Untitled/lem-ipc/src/common/lib.c
+Norme: /Volumes/Untitled/lem-ipc/src/common/ressource_mgt.c
+Norme: /Volumes/Untitled/lem-ipc/src/common/signal.c
+Norme: /Volumes/Untitled/lem-ipc/src/graphic/main.c
+Norme: /Volumes/Untitled/lem-ipc/src/lemipc/circle.c
+Norme: /Volumes/Untitled/lem-ipc/src/lemipc/corners.c
+Norme: /Volumes/Untitled/lem-ipc/src/lemipc/movement.c
+Error (line 34): line has 106 characters
+Norme: /Volumes/Untitled/lem-ipc/src/lemipc/signal.c
+Error (line 16): declarations in leave are bad aligned
+Norme: /Volumes/Untitled/lem-ipc/src/lemipc/utils.c
+Error: global scope bad aligned
+Error (line 37): function death has 27 lines
+Error (line 51, col 6): space after (
+Error (line 53, col 7): space after (
+Error (line 54, col 46): space before )
+Error (line 56): line has 102 characters
+Error (line 65, col 8): missing parentheses in return statement
+Error (line 70): line has 107 characters
+Norme: /Volumes/Untitled/lem-ipc/src/lemipc/adebray_main.c
