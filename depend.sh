@@ -2,4 +2,5 @@
 git submodule init ;
 git submodule update ;
 
-(cd glfw && cmake . && make) ;
+env ;
+(cd glfw && cmake . && unset CFLAGS ; unset CC ; env ; make) ;

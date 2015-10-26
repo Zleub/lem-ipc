@@ -27,7 +27,7 @@ all: _depend
 
 _depend:
 	@mkdir -p bin
-	./depend.sh
+	sh depend.sh
 	make -C libft
 	make bin/libcommon.a
 	make $(NAME)
