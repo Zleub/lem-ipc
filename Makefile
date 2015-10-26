@@ -28,8 +28,13 @@ all: _depend
 _depend:
 	@mkdir -p bin
 	make -C libft
-	git submodule init
-	git submodule update
+	(
+		git submodule init
+		git submodule update
+		cd glfw
+		cmake .
+		make
+	)
 	make bin/libcommon.a
 	make $(NAME)
 	make bin/graphic
