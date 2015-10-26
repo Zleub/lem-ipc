@@ -13,7 +13,7 @@
 NAME			=	bin/lem-ipc
 
 export CC		=	clang
-export CFLAGS	=	-Iinc -Iglfw/include -Wall -Werror -Wextra -pedantic -03
+export CFLAGS	=	-Iinc -Iglfw/include -Wall -Werror -Wextra -pedantic -O3
 LDFLAGS			=	-Lglfw/src -lglfw3 -Llibft -lft -Lbin -lcommon -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo
 
 GSRC			=	$(addprefix src/graphic/, $(shell ls src/graphic | grep '\.c'))
@@ -27,7 +27,7 @@ all: _depend
 
 _depend:
 	@mkdir -p bin
-	sh depend.sh
+	./depend.sh
 	make -C libft
 	make bin/libcommon.a
 	make $(NAME)
