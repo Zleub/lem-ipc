@@ -6,7 +6,7 @@
 #    By: adebray <adebray@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/02/11 01:49:54 by amaurer           #+#    #+#              #
-#    Updated: 2015/10/25 01:38:13 by adebray          ###   ########.fr        #
+#    Updated: 2015/10/26 04:18:44 by adebray          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,8 @@ all: _depend
 _depend:
 	@mkdir -p bin
 	make -C libft
-	# make -C minilibx_macos
+	git submodule init
+	git submodule update
 	make bin/libcommon.a
 	make $(NAME)
 	make bin/graphic
