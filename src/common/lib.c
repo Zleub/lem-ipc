@@ -6,7 +6,7 @@
 /*   By: adebray <adebray@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/01 17:28:34 by adebray           #+#    #+#             */
-/*   Updated: 2015/10/20 01:02:31 by adebray          ###   ########.fr       */
+/*   Updated: 2015/10/26 03:46:31 by adebray          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@ void			attach_sem_first(int sem_size)
 	{
 		if (semop(g_sem.id, &sb, 1) == -1)
 			printf("semop error\n");
-		else
-			printf("init sem %d\n", sb.sem_num);
 		sb.sem_num += 1;
 	}
 }
@@ -44,7 +42,10 @@ void			attach_sem_other(int sem_size)
 	{
 		semctl(g_sem.id, 0, IPC_STAT, param);
 		if (param.buf->sem_otime != 0)
+		{
 			lock = 0;
+			return ;
+		}
 		printf("waiting\n");
 		usleep(SLEEP_TIME);
 	}
@@ -69,8 +70,12 @@ void			attach_shm(void)
 	g_shm.data = shmat(g_shm.id, NULL, 0);
 	attach_sem();
 	g_msg.id = msgget(g_ftok.key, 0666 | IPC_CREAT);
-	printf("id: %d, path: %s, size: %d\n", g_ftok.id, g_ftok.path, g_shm.size);
-	printf("shmid: %d, semid: %d\n", g_shm.id, g_sem.id);
+	if (g_verbose)
+	{
+		printf("id: %d, path: %s, size: %d\n",
+			g_ftok.id, g_ftok.path, g_shm.size);
+		printf("shmid: %d, semid: %d\n", g_shm.id, g_sem.id);
+	}
 	signal(SIGINT, &interrupt);
 	signal(SIGKILL, &interrupt);
 	signal(SIGTERM, &interrupt);

@@ -6,7 +6,7 @@
 /*   By: adebray <adebray@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/01 18:39:04 by adebray           #+#    #+#             */
-/*   Updated: 2015/10/20 22:48:08 by adebray          ###   ########.fr       */
+/*   Updated: 2015/10/26 03:34:16 by adebray          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,8 @@ int		main(int argc, char *argv[])
 	int		index;
 
 	init(argc, argv);
-	printf("This is a lem-ipc\n");
+	if (g_verbose)
+		printf("This is a lem-ipc\n");
 	srand((unsigned int)&g_player);
 	if (!g_player.position.x)
 		g_player.position.x = rand() % g_shm.size;
@@ -62,7 +63,6 @@ int		main(int argc, char *argv[])
 	allocate_ressource(MAP_ACCESS);
 	g_shm.data[index] = g_player.team;
 	release_ressource(MAP_ACCESS);
-
 	while (42)
 	{
 		do_move();

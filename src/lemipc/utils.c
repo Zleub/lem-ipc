@@ -6,7 +6,7 @@
 /*   By: adebray <adebray@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/14 22:14:21 by adebray           #+#    #+#             */
-/*   Updated: 2015/10/18 19:59:48 by adebray          ###   ########.fr       */
+/*   Updated: 2015/10/26 03:16:21 by adebray          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ void			init(int argc, char *argv[])
 	int	ch;
 
 	init_common();
-	while ((ch = getopt(argc, argv, "s:t:x:y:")) != -1)
+	while ((ch = getopt(argc, argv, "s:t:x:y:v")) != -1)
 	{
 		if (ch == '?')
 			lemipc_usage();
@@ -87,6 +87,8 @@ void			init(int argc, char *argv[])
 			g_player.position.x = ft_atoi(optarg);
 		else if (ch == 'y')
 			g_player.position.y = ft_atoi(optarg);
+		else if (ch == 'v')
+			g_verbose = 1;
 	}
 	if (!g_ftok.id || !g_shm.size || !g_player.team)
 		lemipc_usage();

@@ -6,7 +6,7 @@
 /*   By: adebray <adebray@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/10/01 18:27:29 by adebray           #+#    #+#             */
-/*   Updated: 2015/10/25 02:57:32 by adebray          ###   ########.fr       */
+/*   Updated: 2015/10/26 04:11:32 by adebray          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,12 @@
 # define MIN(x, y) ((x < y) ? x : y)
 # define MAX(x, y) ((x > y) ? x : y)
 
-# define SIZE 32
+# define SIZE 128
 # define ID 42
 # define PATH "./shared_segment"
 # define SEM_PATH "./semaphore_set"
 
-# define SLEEP_TIME (1000000 / 4)
+# define SLEEP_TIME (1000000 / 16)
 # define TEAM_NUMBER 5
 
 enum				e_sem
@@ -76,13 +76,14 @@ enum				e_msgbuf
 struct				s_msgbuf
 {
 	long			mtype;
-	struct s_data
+	struct			s_data
 	{
-		int		x;
-		int		y;
+		int			x;
+		int			y;
 	}				data;
 };
 
+int					g_verbose;
 struct s_ftok		g_ftok;
 struct s_shm		g_shm;
 struct s_sem		g_sem;
