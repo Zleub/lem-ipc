@@ -6,14 +6,14 @@
 #    By: adebray <adebray@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/02/11 01:49:54 by amaurer           #+#    #+#              #
-#    Updated: 2015/10/26 04:18:44 by adebray          ###   ########.fr        #
+#    Updated: 2015/10/26 04:27:16 by adebray          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			=	bin/lem-ipc
 
 export CC		=	clang
-export CFLAGS	=	-Iinc -Iglfw/include -Wall -Werror -Wextra -pedantic -g3
+export CFLAGS	=	-Iinc -Iglfw/include -Wall -Werror -Wextra -pedantic -03
 LDFLAGS			=	-Lglfw/src -lglfw3 -Llibft -lft -Lbin -lcommon -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo
 
 GSRC			=	$(addprefix src/graphic/, $(shell ls src/graphic | grep '\.c'))
@@ -27,14 +27,8 @@ all: _depend
 
 _depend:
 	@mkdir -p bin
+	sh depend.sh
 	make -C libft
-	(
-		git submodule init
-		git submodule update
-		cd glfw
-		cmake .
-		make
-	)
 	make bin/libcommon.a
 	make $(NAME)
 	make bin/graphic
