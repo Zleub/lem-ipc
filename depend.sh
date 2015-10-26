@@ -2,7 +2,6 @@
 git submodule init ;
 git submodule update ;
 
-env ;
 unset CFLAGS ;
 unset CC ;
 unset MAKEFLAGS ;
