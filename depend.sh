@@ -3,4 +3,8 @@ git submodule init ;
 git submodule update ;
 
 env ;
-(cd glfw && cmake . && unset CFLAGS ; unset CC ; env ; make) ;
+unset CFLAGS ;
+unset CC ;
+unset MAKEFLAGS ;
+unset MFLAGS ;
+(cd glfw && cmake . && make) ;
